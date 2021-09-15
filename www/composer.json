@@ -1,14 +1,19 @@
 {
-  "name": "vendor_name/www",
-  "description": "description",
-  "minimum-stability": "stable",
-  "license": "proprietary",
-  "authors": [
-    {
-      "name": "dev",
-      "email": "email@example.com"
+    "name": "dev/composer.sk",
+
+    "authors": [
+        {
+            "name": "s.konovalov",
+            "email": "s.konovalov@intensa.ru"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monolog\\": "src/",
+            "Vendor\\Namespace\\": ""
+        }
     }
-  ],
-  "require": {
-  }
 }
