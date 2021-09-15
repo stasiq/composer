@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../composer.sk/.idea/composer.sk.iml" filepath="$PROJECT_DIR$/../composer.sk/.idea/composer.sk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/composer.sk.iml" filepath="$PROJECT_DIR$/.idea/composer.sk.iml" />
     </modules>
   </component>
 </project>
