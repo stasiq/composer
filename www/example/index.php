@@ -16,6 +16,7 @@ $helper = new Helper;
 dump($user);
 
 $log = new Logger('EXAMPLE LOGGER');
-$log->pushHandler(new StreamHandler(__DIR__.'/logs/debug/log', Logger::WARNING));
+dump($log);
+$log->pushHandler(new StreamHandler('../logs/log.txt', Logger::WARNING));
 $log->warning('EXAMPLE is WORKING');
 
