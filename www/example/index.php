@@ -1,6 +1,6 @@
 <h1>Composer</h1>
 <?php
-require_once __DIR__.'/vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
