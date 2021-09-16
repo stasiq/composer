@@ -1,21 +1,21 @@
 <h1>Composer</h1>
 <?php
-
-include('vendor/autoload.php');
+require_once __DIR__.'/vendor/autoload.php';
 
 use Monolog\Logger;
 use Monolog\Handler\StreamHandler;
 use Faker\Factory as Faker;
 use Src\User;
+use Src\Common\Helper;
 
 $faker = Faker::create('ru_RU');
 
 $user = new User($faker->name, $faker->phoneNumber);
+$helper = new Helper;
 
 dump($user);
 
-$log = new Logger('logs');
-$log->pushHandler(new StreamHandler('logs/log.log', Logger::WARNING));
+$log = new Logger('EXAMPLE LOGGER');
+$log->pushHandler(new StreamHandler(__DIR__.'/logs/debug/log', Logger::WARNING));
+$log->warning('EXAMPLE is WORKING');
 
-$log->warning('Warning!');
-$log->error('Error!');
